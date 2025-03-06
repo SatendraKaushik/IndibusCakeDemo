@@ -6,6 +6,9 @@ import { Navbar } from "./components/layout/navbar";
 import Home from "./pages/home";
 import Product from "./pages/product";
 import Category from "./pages/category";
+import About from "./pages/about";
+import Team from "./pages/team";
+import Contact from "./pages/contact";
 import NotFound from "./pages/not-found";
 
 function Router() {
@@ -14,6 +17,9 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/product/:id" component={Product} />
       <Route path="/category/:name" component={Category} />
+      <Route path="/about" component={About} />
+      <Route path="/team" component={Team} />
+      <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
   );

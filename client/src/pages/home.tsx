@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { ProductCard } from "@/components/ui/product-card";
 import { sampleProducts } from "@shared/schema";
+import { Testimonials } from "@/components/sections/testimonials";
+import { OurProcess } from "@/components/sections/our-process";
+import { Newsletter } from "@/components/sections/newsletter";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -101,6 +104,9 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* Our Process Section */}
+      <OurProcess />
+
       {/* Features Section */}
       <section className="bg-[#1B1B1B]/50 py-24">
         <div className="container mx-auto px-4">
@@ -125,6 +131,12 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
+
+      {/* Newsletter Section */}
+      <Newsletter />
     </div>
   );
 }
