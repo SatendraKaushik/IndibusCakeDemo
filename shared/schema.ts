@@ -108,5 +108,38 @@ export const sampleProducts: Product[] = [
     ingredients: "Iranian Pistachios, Damascus Rose Water, Gold Sugar",
     servingSize: "Serves 8-10 | Afternoon Tea",
     packaging: "Emerald Green Box with Gold Details"
+  },
+  {
+    id: 7,
+    name: "Grand Millefeuille Royale",
+    description: "Thousand layers of caramelized puff pastry with Madagascan vanilla cream and gold leaf",
+    price: "79.99",
+    category: "Signature Cakes",
+    image: "https://images.unsplash.com/photo-1547047803-fa4eb4613d82",
+    ingredients: "French Butter, Madagascar Vanilla, 23K Gold Leaf",
+    servingSize: "Serves 6-8 | Best with Champagne",
+    packaging: "Gold-rimmed Crystal Display Case"
+  },
+  {
+    id: 8,
+    name: "Saffron Rose Entremet",
+    description: "Persian saffron mousse with rose jelly and pistachio dacquoise",
+    price: "92.99",
+    category: "Signature Cakes",
+    image: "https://images.unsplash.com/photo-1491147334573-44cbb4602074",
+    ingredients: "Premium Saffron, Damascus Rose Water, Iranian Pistachios",
+    servingSize: "Serves 8-10 | Perfect for Celebrations",
+    packaging: "Hand-painted Keepsake Box"
+  },
+  {
+    id: 9,
+    name: "Nocturne Chocolate Symphony",
+    description: "Five textures of premium chocolate with gold-dusted chocolate shards",
+    price: "88.99",
+    category: "Signature Cakes",
+    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+    ingredients: "Valrhona Chocolate Selection, Gold Dust, Fleur de Sel",
+    servingSize: "Serves 8-10 | Wine Pairing Available",
+    packaging: "Musical Box with LED Illumination"
   }
 ];
