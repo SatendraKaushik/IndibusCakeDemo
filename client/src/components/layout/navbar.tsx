@@ -11,7 +11,7 @@ export const Navbar = () => {
   const cart = useStore((state: { cart: any[] }) => state.cart);
 
   const navLinks = [
-    { href: "/category/signature", label: "Signature" },
+    { href: "/signature-collection", label: "Signature Collection" },
     { href: "/category/seasonal", label: "Seasonal" },
     { href: "/about", label: "About" },
     { href: "/team", label: "Our Team" },

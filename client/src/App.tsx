@@ -10,6 +10,7 @@ import About from "./pages/about";
 import Team from "./pages/team";
 import Contact from "./pages/contact";
 import Order from "./pages/order";
+import SignatureCollection from "./pages/signature-collection";
 import NotFound from "./pages/not-found";
 
 function Router() {
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/team" component={Team} />
       <Route path="/contact" component={Contact} />
       <Route path="/order/:id" component={Order} />
+      <Route path="/signature-collection" component={SignatureCollection} />
       <Route component={NotFound} />
     </Switch>
   );

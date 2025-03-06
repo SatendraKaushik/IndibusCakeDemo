@@ -60,10 +60,10 @@ export default function Home() {
             className="flex justify-center space-x-4"
           >
             <a
-              href="#products"
+              href="/signature-collection"
               className="px-8 py-3 bg-[#DAA520] text-[#1B1B1B] font-semibold rounded hover:bg-[#8B4513] hover:text-[#F5DEB3] transition-colors duration-300"
             >
-              Explore Collection
+              Explore Signature Collection
             </a>
           </motion.div>
         </div>
@@ -79,58 +79,35 @@ export default function Home() {
         </motion.div>
       </motion.section>
 
-      {/* Products Section */}
-      <section id="products" className="container mx-auto px-4 py-24">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-[#F5DEB3] text-4xl font-playfair text-center mb-16"
-        >
-          Our Signature Collection
-        </motion.h2>
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {sampleProducts.map((product) => (
-            <motion.div key={product.id} variants={itemVariants}>
-              <ProductCard product={product} />
-            </motion.div>
-          ))}
-        </motion.div>
+      {/* Featured Products Section */}
+      <section id="featured" className="py-24 bg-black/20">
+        <div className="container mx-auto px-4">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-[#F5DEB3] text-4xl font-playfair text-center mb-16"
+          >
+            Featured Creations
+          </motion.h2>
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          >
+            {sampleProducts.slice(0, 3).map((product) => (
+              <motion.div key={product.id} variants={itemVariants}>
+                <ProductCard product={product} />
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </section>
 
       {/* Our Process Section */}
       <OurProcess />
-
-      {/* Features Section */}
-      <section className="bg-[#1B1B1B]/50 py-24">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-12"
-          >
-            <div className="text-center">
-              <h3 className="text-[#DAA520] text-2xl font-playfair mb-4">Handcrafted</h3>
-              <p className="text-[#F5DEB3] opacity-80">Each creation is meticulously crafted by our master pastry chefs</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-[#DAA520] text-2xl font-playfair mb-4">Premium Ingredients</h3>
-              <p className="text-[#F5DEB3] opacity-80">Sourced from the finest producers around the world</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-[#DAA520] text-2xl font-playfair mb-4">Luxury Packaging</h3>
-              <p className="text-[#F5DEB3] opacity-80">Presented in our signature gift boxes with premium finishing</p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Testimonials Section */}
       <Testimonials />
