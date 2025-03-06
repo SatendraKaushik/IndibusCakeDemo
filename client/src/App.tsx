@@ -9,6 +9,7 @@ import Category from "./pages/category";
 import About from "./pages/about";
 import Team from "./pages/team";
 import Contact from "./pages/contact";
+import Order from "./pages/order";
 import NotFound from "./pages/not-found";
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/team" component={Team} />
       <Route path="/contact" component={Contact} />
+      <Route path="/order/:id" component={Order} />
       <Route component={NotFound} />
     </Switch>
   );
