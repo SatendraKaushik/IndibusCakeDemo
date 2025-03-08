@@ -26,7 +26,7 @@ export const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="text-[#F5DEB3] text-2xl font-playfair cursor-pointer"
           >
-            Luxury Confections
+         Rasoi Bakes
           </motion.h1>
         </Link>
 

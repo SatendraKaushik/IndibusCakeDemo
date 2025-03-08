@@ -7,7 +7,7 @@ const team = [
     name: "Isabella Laurent",
     role: "Founder & Master Pastry Chef",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
-    bio: "With over 20 years of experience in luxury pastry, Isabella trained at prestigious institutions in Paris before founding Luxury Confections.",
+    bio: "With over 20 years of experience in luxury pastry, Isabella trained at prestigious institutions in Paris before founding Rasoi Bakes",
     social: {
       instagram: "#",
       twitter: "#",

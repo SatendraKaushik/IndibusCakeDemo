@@ -58,7 +58,7 @@ export default function Home() {
               transition={{ delay: 0.4 }}
               className="text-[#F5DEB3] text-5xl md:text-7xl font-playfair mb-6"
             >
-              Luxury Confections
+              Rasoi Bakes
             </motion.h1>
 
             <motion.p
@@ -165,7 +165,7 @@ export default function Home() {
             <HeartHandshake className="w-16 h-16 text-[#DAA520] mx-auto mb-6" />
             <h2 className="text-[#F5DEB3] text-4xl font-playfair mb-8">Our Philosophy</h2>
             <p className="text-[#F5DEB3] text-xl opacity-90 leading-relaxed mb-12">
-              At Luxury Confections, we believe that every dessert should be a work of art, 
+              At Rasoi Bakess, we believe that every dessert should be a work of art, 
               a moment of pure indulgence that transcends the ordinary. Our passion for 
               perfection drives us to create experiences that delight all senses.
             </p>
